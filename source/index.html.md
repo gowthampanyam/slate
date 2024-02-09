@@ -1,11 +1,8 @@
 ---
-title: API Reference
+title: Credflow API Docs
 
 language_tabs: # must be one of https://github.com/rouge-ruby/rouge/wiki/List-of-supported-languages-and-lexers
   - shell
-  - ruby
-  - python
-  - javascript
 
 toc_footers:
   - <a href='#'>Sign Up for a Developer Key</a>
@@ -20,43 +17,25 @@ code_clipboard: true
 
 meta:
   - name: description
-    content: Documentation for the Kittn API
+    content: Documentation for the Credissuer
 ---
 
 # Introduction
 
-Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.
+Welcome to the Credissuer API! You can use our APIs to access Credissuer API endpoints, which can be used for login, signup, create a issuer vs template, issue a vs and more.
 
-We have language bindings in Shell, Ruby, Python, and JavaScript! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
+We have language bindings in Shell(Curl) You can view code examples in the dark area to the right.
 
-This example API documentation page was created with [Slate](https://github.com/slatedocs/slate). Feel free to edit it and use it as a base for your own API's documentation.
 
-# Authentication
+# Users
 
 > To authorize, use this code:
 
-```ruby
-require 'kittn'
-
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-```
-
-```python
-import kittn
-
-api = kittn.authorize('meowmeowmeow')
-```
 
 ```shell
 # With shell, you can just pass the correct header with each request
 curl "api_endpoint_here" \
   -H "Authorization: meowmeowmeow"
-```
-
-```javascript
-const kittn = require('kittn');
-
-let api = kittn.authorize('meowmeowmeow');
 ```
 
 > Make sure to replace `meowmeowmeow` with your API key.
